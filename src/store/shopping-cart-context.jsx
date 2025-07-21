@@ -38,8 +38,6 @@ function shoppingCartReducer(state, action) {
       ...state,
       items: updatedItems,
     };
-
-    return {};
   }
 
   if (action.type === "UPDATE_ITEM") {
@@ -97,8 +95,8 @@ export default function CartContextProvider({ children }) {
   const ctxValue = {
     items: shoppingCartState.items,
     addItemToCart: handleAddItemToCart,
-    updatedItemQuantity: handleUpdateCartItemQuantity,
+    updateItemQuantity: handleUpdateCartItemQuantity,
   };
 
-  return <CartContextProvider value={ctxValue}>{children}</CartContextProvider>;
+  return <CartContext.Provider value={ctxValue}>{children}</CartContext.Provider>;
 }
