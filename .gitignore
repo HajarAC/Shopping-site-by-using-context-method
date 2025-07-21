@@ -1,0 +1,8 @@
+"node_modules/.env.DS_Storebuild/dist/npm-debug.logyarn.lockcoverage/" 
+.env 
+.DS_Store 
+build/ 
+dist/ 
+npm_debug.log 
+yarn.lock 
+coverage/ 
